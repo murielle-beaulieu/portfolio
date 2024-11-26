@@ -1,0 +1,26 @@
+@use "../partials/colors";
+@use "../partials/fonts";
+
+
+.nav {
+  position: sticky;
+  background-color: colors.$bg-color;
+  a {
+    margin: 0 20px;
+    font-family: fonts.$normal-text;
+    color: colors.$text-color;
+    text-decoration: none;
+    &:hover {
+      color: colors.$text-color;
+      border-bottom: 1px solid colors.$text-color;
+    }
+  }
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 60px;
+}
