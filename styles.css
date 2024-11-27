@@ -1,0 +1,55 @@
+/* blue and orange */
+/* beige and red */
+/* light beige and orange red */
+.nav {
+  position: sticky;
+  background-color: #457076;
+}
+.nav a {
+  font-size: 1.25rem;
+  margin: 0 20px;
+  padding-bottom: 4px;
+  font-family: "Barlow", sans-serif;
+  color: #143141;
+  text-decoration: none;
+}
+.nav a:hover {
+  color: #143141;
+  margin-top: 1px;
+  border-bottom: 1px solid #143141;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 80px;
+}
+
+h1 {
+  font-family: "Lora", serif;
+  color: #EAB86F;
+  font-size: 4rem;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+}
+
+body {
+  background-color: #457076;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  display: flex;
+  justify-self: center;
+}
+
+/*# sourceMappingURL=styles.css.map */

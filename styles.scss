@@ -1,0 +1,15 @@
+@use "./partials/colors";
+@use "./partials/fonts";
+@use "./sections/nav";
+@use "./sections/header";
+
+body {
+  background-color: colors.$bg-color;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  display: flex;
+  justify-self: center;
+}
