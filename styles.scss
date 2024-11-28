@@ -1,15 +1,42 @@
 @use "./partials/colors";
 @use "./partials/fonts";
+@use "./partials/mixins";
 @use "./sections/nav";
 @use "./sections/header";
+@use "./sections/about";
+@use "./sections/projects";
 
 body {
-  background-color: colors.$bg-color;
   margin: 0;
 }
 
+h1 {
+  font-family: fonts.$main-heading;
+  color: colors.$title-color;
+  font-size: 4rem;
+}
+
+h2 {
+  font-family: fonts.$main-heading;
+  color: colors.$title-color;
+  font-size: 2rem;
+}
+
+h3 {
+  font-family: fonts.$main-heading;
+  color: colors.$text-color;
+  font-size: 1.5rem;
+}
+
+p {
+  color: colors.$text-color;
+  font-family: fonts.$normal-text;
+  font-size: 1.25rem;
+}
+
 .container {
-  width: 90%;
+  width: 80%;
   display: flex;
   justify-self: center;
+  justify-content: center;
 }

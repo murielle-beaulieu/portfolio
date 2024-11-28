@@ -19,37 +19,88 @@
   border-bottom: 1px solid #143141;
 }
 
+.nav-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 20%;
+}
+
 .links {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: 100%;
+  width: 80%;
   height: 80px;
 }
 
-h1 {
-  font-family: "Lora", serif;
-  color: #EAB86F;
-  font-size: 4rem;
+header {
+  background-color: #457076;
 }
 
-.title {
+.header-title {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: 600px;
 }
 
+#about {
+  height: 400px;
+  padding-top: 100px;
+  background-color: white;
+}
+
+.about-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.about-intro {
+  text-align: end;
+  width: 80%;
+}
+
+#projects {
+  height: 500px;
+}
+
 body {
-  background-color: #457076;
   margin: 0;
 }
 
+h1 {
+  font-family: "Lora", serif;
+  color: #ffc772;
+  font-size: 4rem;
+}
+
+h2 {
+  font-family: "Lora", serif;
+  color: #ffc772;
+  font-size: 2rem;
+}
+
+h3 {
+  font-family: "Lora", serif;
+  color: #143141;
+  font-size: 1.5rem;
+}
+
+p {
+  color: #143141;
+  font-family: "Barlow", sans-serif;
+  font-size: 1.25rem;
+}
+
 .container {
-  width: 90%;
+  width: 80%;
   display: flex;
   justify-self: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

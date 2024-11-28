@@ -1,16 +1,13 @@
 @use "../partials/colors";
 @use "../partials/fonts";
+@use "../partials/mixins";
 
-h1 {
-  font-family: fonts.$main-heading;
-  color: colors.$title-color;
-  font-size: 4rem;
+header {
+  background-color: colors.$bg-color;
 }
 
-.title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.header-title {
+  @include mixins.content-center;
   width: 100%;
   height: 600px;
 }

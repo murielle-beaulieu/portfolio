@@ -21,8 +21,13 @@
   }
 }
 
+.nav-title {
+  @include mixins.content-center-flexstart;
+  width: 20%;
+}
+
 .links {
-  @include mixins.align-center-flexend;
-  width: 100%;
+  @include mixins.content-center-flexend;
+  width: 80%;
   height: 80px;
 }
