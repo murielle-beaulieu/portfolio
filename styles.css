@@ -68,6 +68,22 @@ header {
   height: 500px;
 }
 
+.projects-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.project-card {
+  margin: 30px;
+  border: 1px solid black;
+}
+.project-card img {
+  width: 440px;
+  height: 340px;
+}
+
 body {
   margin: 0;
 }

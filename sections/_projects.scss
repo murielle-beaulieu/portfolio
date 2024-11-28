@@ -5,3 +5,17 @@
 #projects {
   height: 500px;
 }
+
+.projects-title {
+  @include mixins.content-center-flexend;
+  width: 100%;
+}
+
+.project-card {
+  margin: 30px;
+  border: 1px solid black;
+  img {
+    width: 440px;
+    height: 340px;
+  }
+}
