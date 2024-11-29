@@ -2,6 +2,32 @@
 @use "../partials/fonts";
 @use "../partials/mixins";
 
-#projects {
-  height: 500px;
+.projects{
+  width: 80%;
+  height: 600px;
+}
+
+.projects-title {
+  @include mixins.content-center-flexstart;
+  width: 100%;
+}
+
+.projects-gallery {
+  @include mixins.content-spacebetween;
+}
+
+
+.projects-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: colors.$card-color;
+  border-radius: 5%;
+  height: 400px;
+  width: 400px;
+  margin: 30px;
+  img {
+    width: 240px;
+    height: 140px;
+  }
 }
