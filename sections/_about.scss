@@ -2,18 +2,15 @@
 @use "../partials/fonts";
 @use "../partials/mixins";
 
-#about {
-  height: 400px;
-  padding-top: 100px;
-  background-color: white
-}
 
 .about-title {
-@include mixins.content-center-flexend;
+  @include mixins.content-center-flexend;
   width: 100%;
 }
 
 .about-intro {
   text-align: end;
   width: 80%;
+  height: 400px;
+  padding-top: 200px;
 }
