@@ -5,6 +5,7 @@
 @use "./sections/header";
 @use "./sections/about";
 @use "./sections/projects";
+@use "./sections/contact";
 
 body {
   margin: 0;
@@ -22,14 +23,22 @@ h2 {
   font-size: 2rem;
 }
 
+
+h3, a, p {
+  color: colors.$text-color;
+}
+
 h3 {
   font-family: fonts.$main-heading;
-  color: colors.$text-color;
   font-size: 1.5rem;
 }
 
+a {
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
 p {
-  color: colors.$text-color;
   font-family: fonts.$normal-text;
   font-size: 1.25rem;
 }
