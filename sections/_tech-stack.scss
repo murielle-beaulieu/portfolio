@@ -1,0 +1,42 @@
+@use "../partials/colors";
+@use "../partials/fonts";
+@use "../partials/mixins";
+@use "../partials/media-query" as q;
+
+#my-stack {
+  width: 100%;
+  height: 100%;
+}
+
+#tech-stack{
+  width: 80%;
+  padding-bottom: 5rem;
+}
+
+.skills {
+  &__gallery {
+    @include mixins.content-space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  &__icon {
+    @include mixins.content-center;
+    height: 56px;
+    width: 56px;
+    padding-top: 2rem;
+    font-size: 50px;
+    color: colors.$text-color;
+    p{
+      opacity: 0;
+      font-size: 0.95rem;
+      text-align: center;
+    }
+    &:hover {
+      transition: 0.3s;
+      transform: scale(1.15);
+      p {
+        opacity: 1;
+      }
+    }
+  }
+}

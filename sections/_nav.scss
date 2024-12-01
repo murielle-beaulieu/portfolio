@@ -1,7 +1,7 @@
 @use "../partials/colors";
 @use "../partials/fonts";
 @use "../partials/mixins";
-
+@use "../partials/media-query" as q;
 
 .nav {
   position: sticky;
