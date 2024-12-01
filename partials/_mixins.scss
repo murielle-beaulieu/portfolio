@@ -16,8 +16,19 @@
   justify-content: flex-start;
 }
 
-@mixin content-spacebetween {
+@mixin content-space-between {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@mixin content-space-evenly {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@mixin content-left-align {
+  display: flex;
+  justify-content: left;
 }

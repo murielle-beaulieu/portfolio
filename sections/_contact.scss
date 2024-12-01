@@ -1,0 +1,31 @@
+@use "../partials/colors";
+@use "../partials/fonts";
+@use "../partials/mixins";
+
+#contact {
+  background-color: colors.$bg-color;
+  height: 30rem;
+  padding-top: 10rem;
+  width: 100%;
+}
+
+.contact__info {
+    @include mixins.content-left-align;
+    flex-direction: column;
+    font-size: 1.25rem;
+    line-height: 3rem;
+    width: 100%;
+    height: 300px;
+    padding-left: 5rem;
+}
+
+.contact__picture{
+  @include mixins.content-center;
+  img {
+    margin-top: 2rem;
+    transform:scale(1.2);
+    width:250px;
+    height:250px;
+    box-shadow: colors.$title-color -35px -35px;
+    }
+}
