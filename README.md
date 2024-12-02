@@ -1,2 +1,3 @@
 # Portfolio Project
-#WIP 🛠️
+
+My first portfolio project, a small intro and showcase of my projects and knowledge.
