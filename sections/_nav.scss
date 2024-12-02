@@ -6,6 +6,7 @@
 .nav {
   position: sticky;
   top: 0;
+  width: 100%;
   background-color: colors.$bg-color;
   a {
     font-size: 1.25rem;
@@ -22,13 +23,52 @@
   }
 }
 
-.nav-title {
-  @include mixins.content-center-flexstart;
-  width: 20%;
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: colors.$text-color;
+}
+
+.toggle-menu {
+  display: none; // Hide the checkbox
 }
 
 .links {
   @include mixins.content-center-flexend;
   width: 80%;
   height: 80px;
+}
+
+
+@include q.sm-screen {
+  .links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    a {
+      display: block;
+      width: 100%;
+      &:hover {
+        border: none;
+      }
+      &:target {
+        display: none;
+      }
+    }
+  }
+
+  #toggle-menu:checked ~ .links {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+    margin-left: auto;
+    padding-top: 1rem;
+  }
+
+  #toggle-menu:checked + .hamburger {
+    display: none;
+  }
 }

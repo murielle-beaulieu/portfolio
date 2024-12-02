@@ -11,8 +11,8 @@
 
 #my-work{
   width: 80%;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .project {
@@ -25,7 +25,7 @@
   &__gallery {
   @include mixins.content-space-evenly;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 1rem;
   }
   &__card {
     @include mixins.content-center-flexstart;

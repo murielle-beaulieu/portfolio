@@ -4,6 +4,7 @@
 .nav {
   position: sticky;
   top: 0;
+  width: 100%;
   background-color: #3b929d;
 }
 .nav a {
@@ -20,11 +21,15 @@
   border-bottom: 1px solid #143141;
 }
 
-.nav-title {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 20%;
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #143141;
+}
+
+.toggle-menu {
+  display: none;
 }
 
 .links {
@@ -35,6 +40,35 @@
   height: 80px;
 }
 
+@media screen and (max-width: 600px) {
+  .links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .links a {
+    display: block;
+    width: 100%;
+  }
+  .links a:hover {
+    border: none;
+  }
+  .links a:target {
+    display: none;
+  }
+  #toggle-menu:checked ~ .links {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+    margin-left: auto;
+    padding-top: 1rem;
+  }
+  #toggle-menu:checked + .hamburger {
+    display: none;
+  }
+}
 header {
   background-color: #3b929d;
 }
@@ -62,8 +96,8 @@ header {
 .about__intro {
   text-align: end;
   width: 80%;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 #projects {
@@ -73,8 +107,8 @@ header {
 
 #my-work {
   width: 80%;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .project {
@@ -92,7 +126,7 @@ header {
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 1rem;
 }
 .project__card {
   display: flex;
@@ -130,17 +164,38 @@ header {
   background-color: #3b929d;
   height: 30rem;
   padding-top: 10rem;
+  height: 100%;
   width: 100%;
 }
 
+.contact__gallery {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  padding-bottom: 6.5rem;
+}
+.contact__picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact__picture img {
+  margin-top: 1rem;
+  transform: scale(1.2);
+  width: 14rem;
+  height: 14rem;
+  box-shadow: #f8ba5d -35px -35px;
+}
 .contact__info {
   display: flex;
   justify-content: left;
   flex-direction: column;
   font-size: 1.25rem;
   line-height: 3rem;
-  width: 100%;
-  height: 300px;
+  height: 20rem;
   padding-left: 5rem;
 }
 .contact__info a {
@@ -151,18 +206,6 @@ header {
 }
 .contact__info a:hover {
   color: rgb(214, 215, 223);
-}
-.contact__picture {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.contact__picture img {
-  margin-top: 2rem;
-  transform: scale(1.2);
-  width: 250px;
-  height: 250px;
-  box-shadow: #f8ba5d -35px -35px;
 }
 
 #my-stack {
@@ -198,10 +241,10 @@ header {
   text-align: center;
 }
 .skills__icon:hover {
+  transition: 0.3s;
   transform: scale(1.15);
 }
 .skills__icon:hover p {
-  transition: 0.3s;
   opacity: 1;
 }
 
