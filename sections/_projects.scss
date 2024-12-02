@@ -1,53 +1,56 @@
 @use "../partials/colors";
 @use "../partials/fonts";
 @use "../partials/mixins";
+@use "../partials/media-query" as q;
+
 
 #projects {
+  height: 100%;
   width: 100%;
-  height: 30rem;
-  padding-bottom: 10rem;
 }
 
-.my-work{
+#my-work{
   width: 80%;
-  padding-top: 100px;
-  padding-bottom: 200px;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .project {
   height: 100%;
-
   &__title {
-    padding-bottom: 5%;
     @include mixins.content-center-flexstart;
     width: 100%;
-}
+    padding-bottom: 4rem;
+  }
   &__gallery {
   @include mixins.content-space-evenly;
   flex-wrap: wrap;
   gap: 10px;
-}
+  }
   &__card {
-    @include mixins.content-center;
+    @include mixins.content-center-flexstart;
+    box-shadow: rgba(0, 0, 0.25, 0.25) 0px 1px 12px;
     flex-direction: column;
     line-height: 2px;
-    background-color: colors.$card-color;
-    border-radius: 5%;
-    height: 250px;
-    width: 250px;
-    p {
-      font-size: 1rem;
-
+    border-radius: 4%;
+    height: 18rem;
+    width: 16rem;
+      p {
+        padding-top: 0;
+        font-size: 1rem;
+        font-style: italic;
+      }
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 20px;
+      }
     }
-    &:hover {
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  &__cover {
+    img {
+      border-radius: 2%;
+      padding-bottom: 0.25rem;
+      height: 12rem;
+      width: 16rem;
     }
-  }
-  &__icon {
-      height: 56px;
-      width: 56px;
-      font-size: 50px;
-      color: colors.$text-color;
   }
 }
 

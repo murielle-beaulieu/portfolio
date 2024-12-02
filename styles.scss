@@ -6,6 +6,7 @@
 @use "./sections/about";
 @use "./sections/projects";
 @use "./sections/contact";
+@use "./sections/tech-stack";
 
 body {
   margin: 0;
@@ -23,7 +24,6 @@ h2 {
   font-size: 2rem;
 }
 
-
 h3, a, p {
   color: colors.$text-color;
 }
@@ -34,6 +34,7 @@ h3 {
 }
 
 a {
+  font-family: fonts.$normal-text;
   text-decoration: none;
   font-size: 1.25rem;
 }
