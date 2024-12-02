@@ -1,7 +1,7 @@
 @use "../partials/colors";
 @use "../partials/fonts";
 @use "../partials/mixins";
-@use "../partials/media-query";
+@use "../partials/media-query" as q;
 
 
 #contact {
@@ -48,5 +48,14 @@
           color: rgb(214, 215, 223);
         }
       }
+  }
+}
+
+@include q.sm-screen {
+  .contact {
+    &__info {
+      @include mixins.content-center;
+      padding-left: 0;
+    }
   }
 }
